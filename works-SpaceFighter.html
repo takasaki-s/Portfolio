@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーSHO TAKASAKI ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='SHO TAKASAKIのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="SHO TAKASAKIのポートフォリオサイトです" />
+  <title>SHO TAKASAKI ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">SHO TAKASAKI</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">SPACE FIGHTER</h2>
+          <div class="article-body">
+            <p>
+              <img src="img/works-SpaceFighter/SpaceFighter_work.png" alt="">
+            </p>
+            <p>
+              Unityを使って初めて作成したスマートフォン向けの王道2Dシューティングゲームになります。<br>
+              M31(アンドロメダ銀河)に蘇った魔王を倒すのが目的となっています。<br>
+              小規模ながらもストーリー性を持たせてユーザーへ雰囲気に浸っていただけるように工夫しました。
+            </p>
+            <h3>ダウンロード</h3>
+            <p>
+            <a href="download/SPACE FIGHTER/SPACE FIGHTER_プロジェクト一式.zip" download>プロジェクト一式</a><br>
+            <a href="download/SPACE FIGHTER/SPACE FIGHTER_APKファイル.zip" download>APKファイル</a><br>
+            <a href="download/SPACE FIGHTER/SPACE FIGHTER_プレイ動画.mp4" download>プレイ動画</a>
+            </p>
+            <h3>担当</h3>
+            <p>企画・プログラム
+            <br>
+            <br>
+            ※制作は全て一人で行っています。<br>
+            ※テクスチャ、サウンドなどは主にフリー素材を使用しており、<br>
+            　スタッフロールにサイト名を記載させていただいてます。
+            </p>
+            <h3>開発環境</h3>
+            <p>
+            Unity 2020.3.14f1<br>
+            Microsoft Visual Studio 2017
+            </p>
+            <h3>開発言語</h3>
+            <p>
+            C#<br>
+            </p>
+            <h3>ターゲットプラットフォーム</h3>
+            <p>
+            Android<br>
+            <br>
+            実機動作確認：Xperia XZ1
+            </p>
+            <h3>デザインについて</h3>
+            <p>
+              宇宙の雰囲気を出すために、素材は何度も変更と修正を重ねました。<br>
+              フリー素材そのままでは違和感がある箇所では自前で画像加工をしたりしました。<br>
+              <br>
+              ボス戦では操作不可区間を設けて演出を見せ特別感を出すようにしました。<br>
+              <br>
+              2D中心の作品ですが、タイトル画面では夜空を見まわしている雰囲気を出したくて<br>
+              申し訳程度に3DでSkyboxを映しています。<br>
+              <br>
+              パーティクルを使用してタップエフェクトなどの実装にも挑戦しています。
+            </p>
+            <h3>コーディングについて</h3>
+            <p>
+              この規模のゲームでも「タイトル」→「ゲーム画面」→「エンディング」と<br>
+              一通りのシーンを作成しようと思ったらそれなりの量のコードとリソースが必要なので<br>
+              フォルダを用途やシーン別に分け、ソース名から使用用途がある程度分かるように<br>
+              自分なりに工夫しました。<br>
+              <br>
+              公開する必要のない変数はprivate修飾子を、<br>
+              定数として扱う変数はconstまたはreadonlyを付けバグが起こりにくいように意識しました。<br>
+              <br>
+              ゲームオブジェクトを検索する必要がある場合に、<br>
+              GameObject.Findはヒエラルキーを全検索するので重いという情報をよく見るので<br>
+              ・極力開始時のみ使用する。<br>
+              ・GameObject.FindWithTagを使用する。<br>
+              などで負荷を軽くすることを意識しました。<br>
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;SHO TAKASAKI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
